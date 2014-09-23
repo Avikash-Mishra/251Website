@@ -56,14 +56,15 @@
 					<td class="tdClass" colspan="2">
 						<div>
 							<h2>Feedback</h2>
-								<form action="URL to form script" method="POST">
-								Your name:<br><input type="text" name="realname"><br><br>
-								Your email:<br><input type="text" name="email"><br><br>
-								Your comments:<br>
-								<textarea name="comments" rows="5" cols="100">
+								<div id = "feedback">
+								</div>
+								
+								Your name:<br><input id = "nameinput" type="text" name="realname"><br><br>
+								Your feedback:<br>
+								<textarea id = "feedbacktext" name="comments" rows="5" cols="100">
 								</textarea><br>
-								<input type="submit" value="Submit"> 
-							</form>
+								<input type="submit" value="Submit" onclick = "submitFeedback()"> 
+						
 						</div>
 					</td>
 				</tr>
@@ -80,3 +81,22 @@
 	</div>
 </body>
 </html>
+
+<script>
+function submitFeedback(){
+
+	
+	if(document.getElementById("feedbacktext").value.length < 10){
+		alert("Feedback must be more then 10 chracters long");
+		return;
+	}
+	if(document.getElementById("nameinput").value == ''){
+		alert("Name Cannot be empty");
+		return;
+	}
+	var name = document.getElementById("nameinput").value;
+	var feedbackvar = document.getElementById("feedbacktext").value;
+	var x = document.getElementById("feedback");
+	x.innerHTML = x.innerHTML + "<p> Name: "+name+"<br>"+feedbackvar+"</p>";
+}
+</script>
