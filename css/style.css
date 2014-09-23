@@ -130,6 +130,7 @@ img {
 	margin: 0 auto;
 	padding: 54px 40px;
 }
+
 h1 {
 	color: #3e3e3e;
 	font-size: 30px;
@@ -306,6 +307,7 @@ p a {
 
 .tdClass {
 	width: 450px;
+	vertical-align: text-top;
 }
 
 
