@@ -75,7 +75,7 @@ img {
 }
 /*------------------------------ HEADER ------------------------------*/
 #header {
-	background-color: #2C6700;
+	background-color: #99CC00;
 	border-bottom: 1px solid #e6e6e6;
 	padding: 20px 0px;
 }
@@ -129,6 +129,11 @@ img {
 	width: 880px;
 	margin: 0 auto;
 	padding: 54px 40px;
+}
+
+#bikeimage{
+	width: 275px;
+	height: 200px;
 }
 
 h1 {
@@ -305,9 +310,32 @@ p a {
 	line-height: 30px;
 }
 
+
+
+
 .tdClass {
 	width: 450px;
 	vertical-align: text-top;
 }
 
 
+.filter{
+	min-height: 510px;
+	width: 200px;
+	border: 2px solid;
+    border-radius: 25px;
+    position: fixed;
+    margin-left: 15%;
+    margin-top: 1%;
+    text-align: center;
+   	border-color: #99CC00;
+}
+
+.filter h2 {
+  color: #FFCF79;
+  margin-top: 5%;
+}
+
+#browsetable{
+	text-align: center;
+}
