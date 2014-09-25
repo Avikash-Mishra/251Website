@@ -111,6 +111,7 @@ img {
 	width: 160px;
 	text-align: center;
 }
+
 #navigation li a {
 	color: #E5E4D7;
 	font-size: 15px;
@@ -123,17 +124,48 @@ img {
 #navigation li.active a {
 	color: #FFCF79;
 }
+
+#navigationb {
+	display: inline-block;
+	list-style: none;
+	line-height: 50px;
+	margin: 0;
+	padding: 0;
+}
+#navigationb ul {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#navigationb li {
+	width: 160px;
+	text-align: center;
+}
+
+#navigationb li a {
+	color: #E5E4D7;
+	font-size: 15px;
+	line-height: 30px;
+	text-decoration: none;
+}
+#navigationb li a:hover {
+	color: #000;
+}
+#navigationb li.active a {
+	color: #FFCF79;
+}
 /*------------------------------ CONTENTS ------------------------------*/
 #contents {
 	min-height: 510px;
 	width: 880px;
-	margin: 0 auto;
+	margin: 0 auto auto 500px;
 	padding: 54px 40px;
 }
 
 #bikeimage{
-	width: 275px;
-	height: 200px;
+	width: 175px;
+	height: 120px;
 }
 
 h1 {
@@ -220,12 +252,12 @@ p a {
 /** list **/
 .list {
 	list-style: none;
-	margin: 0;
+	margin: 0 auto auto 250px;
 	padding: 0;
 }
 .list li {
 	border-top: 1px solid #d5d5d5;
-	padding: 24px 30px 0 100px;
+	padding: 55px 30px 0 200px;
 	position: relative;
 }
 .list li .box {
@@ -241,8 +273,8 @@ p a {
 /** box **/
 .box {
 	float: left;
-	height: 78px;
-	width: 70px;
+	height: 150px;
+	width: 175px;
 	margin-right: 20px;
 	border: 1px solid #d5d5d5;
 	text-align: center;
@@ -325,10 +357,12 @@ p a {
 	border: 2px solid;
     border-radius: 25px;
     position: fixed;
-    margin-left: 15%;
-    margin-top: 1%;
+    /*margin-left: 450px;*/
+    margin-top: 50px;
     text-align: center;
    	border-color: #99CC00;
+   	background-color: #86b300;
+
 }
 
 .filter h2 {
