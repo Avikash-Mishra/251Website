@@ -64,6 +64,7 @@ img {
 	background-color: WhiteSmoke;
 	width: 50%;
 	text-align: center;
+	margin-left: 200px;
 }
 .simpletable th {
 	background-color: #A7C942;
@@ -71,6 +72,19 @@ img {
 }
 .simpletable, .simpletable td, .simpletable th {
 	padding: 10px 15px 10px 15px;
+	border: 1px solid #A7C942;
+}
+
+.simpletable2 {
+	border-collapse: collapse;
+	background-color: WhiteSmoke;
+	width: 80%;
+}
+.simpletable2 th {
+	background-color: #A7C942;
+	color: White;
+}
+.simpletable2, .simpletable2 td, .simpletable2 th {
 	border: 1px solid #A7C942;
 }
 /*------------------------------ HEADER ------------------------------*/
@@ -342,7 +356,74 @@ p a {
 	line-height: 30px;
 }
 
+.visuallyhidden {
+    display: none;
+}
 
+.wizard-progress {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    white-space: nowrap;
+
+}
+
+.wizard-progress li {
+    float: left;
+    margin-right: 50px;
+    text-align: center;
+    position: relative;
+    width: 100px;
+
+}
+
+.wizard-progress .step-name {
+    display: table-cell;
+    height: 32px;
+    vertical-align: bottom;
+    text-align: center;
+    width: 100px;
+
+}
+
+.wizard-progress .step-name-wrapper {
+    display: table-cell;
+    height: 100%;
+    vertical-align: bottom;
+
+}
+
+.wizard-progress .step-num {
+    font-size: 14px;
+    font-weight: bold;
+    border: 3px solid #99CC00;
+    border-radius: 50%;
+    width: 18px;
+    display: inline-block;
+    margin-top: 10px;
+
+}
+
+.wizard-progress .step-num:after {
+    content: "";
+    display: block;
+    background: #99CC00;
+    height: 5px;
+    width: 130px;
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+}
+
+.wizard-progress li:last-of-type .step-num:after {
+    display: none;
+}
+
+.wizard-progress .active-step .step-num {
+    background-color: #FFCF79;
+}
 
 
 .tdClass {
@@ -359,6 +440,7 @@ p a {
     position: fixed;
     /*margin-left: 450px;*/
     margin-top: 50px;
+    margin-right: 20px;
     text-align: center;
    	border-color: #99CC00;
    	background-color: #86b300;
@@ -372,4 +454,49 @@ p a {
 
 #browsetable{
 	text-align: center;
+}
+
+#cartimage{
+	width: 100px;
+	height:	75px;
+}
+
+input[type="number"] {
+   width:30px;
+}
+
+#proceedbutton{
+	float: right;
+	margin-right: 210px;
+}
+#orderprogressdiv{
+	height: 50px;
+	margin: 0 auto auto 500px;
+	padding-left: 275px;
+}
+
+.formdetails input{
+	 width: 100%;
+     clear: both;
+}
+
+.formdetails{
+	width: 200px;
+	margin-left: 315px;
+}
+
+.orderdetails{
+	width: 400px;
+	margin-left: 315px;
+}
+
+#ordertitle{
+	margin-left: 315px;
+}
+
+#continuebutton{
+	margin-left:310px; 
+	}
+#small{
+	width:	40px;
 }

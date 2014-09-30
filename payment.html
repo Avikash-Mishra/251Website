@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Complex page</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="header">
+		<div>
+			<a href="index.html"><img id="logo" src="images/logo.png" alt="Img"></a>
+			<ul id="navigation">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="Browse.html">Browse</a>
+				</li>
+				<li class="active">
+					<a href="cart.html">Shopping Cart</a>
+				</li>
+				<li>
+					<a href="trackorder.html">Track order</a>
+				</li>
+				<li>
+					<a href="support.html">Support</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+<div id = "orderprogressdiv">
+	<ol class="wizard-progress clearfix">
+    <li>
+        <span class="step-name">
+            Shipping Details
+        </span>
+        <span class="visuallyhidden">Step </span><span class="step-num">1</span>
+    </li>
+    <li class="active-step">
+        <span class="step-name">Payment</span>
+        <span class="visuallyhidden">Step </span><span class="step-num">2</span>
+    </li>
+    <li>
+        <span class="step-name">Place Order</span>
+        <span class="visuallyhidden">Step </span><span class="step-num">3</span>
+    </li>
+</ol></div>
+	<div id="contents">
+		<div>
+		<h2 id = "ordertitle">Enter Payment Details</h2>
+		</div>
+			<div class="formdetails">
+				Select Payment Method: <br>
+				<select id="paymentselect" onchange="paymentMethod()">
+					<option value="">Payment method...</option>
+					<option value="VM">Visa/Mastercard</option>
+					<option value="PP">PayPal</option>
+					<option value="BT">Back Transfer</option>
+				</select>
+				<div id = "formdiv">
+
+
+		</div>
+
+
+			</div>
+		<span><div>
+				<p>
+			<a href="order.html" id = "continuebutton"><img src="images/continuebutton.png"></a> 
+		</p>
+		</div></span>
+		</div>
+
+	</div>
+	<div id="footer">
+		<div class="block">
+			<p>
+				Footer
+			</p>
+		</div>
+	</div>
+</body>
+</html>
+
+<script>
+function paymentMethod(){
+
+	
+	if(document.getElementById("paymentselect").value == 'VM'){
+		var x = document.getElementById("formdiv");
+		x.innerHTML = "<form> Name on card <input type = 'text'> Card Number <input type = 'text'> CSC: <input id = 'small' type = 'text'><br> Expires <br> Month: <input id = 'small' type = 'text'> Year: <input id = 'small' type = 'text'> </form>"
+		return;
+	}
+
+	if(document.getElementById("paymentselect").value == 'PP'){
+		var x = document.getElementById("formdiv");
+		x.innerHTML = "<form> PayPal email: <input type = 'text'> PayPal password: <input type = 'text'> </form>"
+		return;
+	}
+
+	if(document.getElementById("paymentselect").value == 'BT'){
+		var x = document.getElementById("formdiv");
+		x.innerHTML = "<p> Please deposit to <br> Bank Number <br> 00-111-2222-33 <br> Reference/Order number <br> ABC123</p>"
+		return;
+	}
+
+	
+}
+</script>
