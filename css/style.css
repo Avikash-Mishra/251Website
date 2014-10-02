@@ -98,9 +98,17 @@ img {
 	margin: 0 auto;
 	padding: 0;
 }
-#loginbutton{
-	margin-left: 50px;
+#LoginDivButton{
+	margin-left: auto;
+	margin-right: auto;
+	width: 275px;
 }
+#LoginDiv{
+		margin-left: auto;
+	margin-right: auto;
+	width: 525px;
+}
+
 /** Logo **/
 #logo {
 	float: left;
