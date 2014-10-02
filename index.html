@@ -31,11 +31,8 @@
 	</div>
 	<div id="contents">
 		<div >
-			<h1>Welcome to GreenB</h1>
-			<table>
-				<tr >
-					<td class="tdClass">
-						<div>
+			<h1>Welcome to GreenB</h1>						
+			<div id = "introdiv">
 							<h2>About GreenB</h2>
 								<p>
 									 GreenB is a small company set up by two bicycle fans. We have designed a bicycle in a way that is highly functional but yet both fashionable and colourful. <br> <br>
@@ -49,34 +46,28 @@
 									makes it easy to be ridden on almost every occasion and in combination with other means of transportation. Most
 									users ride it to commute to work. <br><br>
 								</p>
-						</div>
-					</td>
-						
-					<td class="tdClass">
-						<div id = "GreenBActionDiv">
-							<h2>GreenB In Action</h2>
+						</div><span><div id ="logindiv"></div></span>
+						<h2>GreenB In Action</h2>
+								<div id = "GreenBActionDiv">
 								<iframe width="560" height="315" src="http://www.youtube.com/embed/kfws7XhaLzI" frameborder="0" allowfullscreen></iframe>
 						</div>
-					</td>
-				</tr>
-				<tr>
-					<td class="tdClass" colspan="2">
-						<div>
-							<h2>Feedback</h2>
-								<div id = "feedback">
-								</div>
-								
-								Your name:<br><input id = "nameinput" type="text" name="realname"><br><br>
-								Your feedback:<br>
-								<textarea id = "feedbacktext" name="comments" rows="5" cols="100">
-								</textarea><br>
-								<input type="submit" value="Submit" onclick = "submitFeedback()"> 
-						
+
+						<h2>Login</h2>
+								<div id = "LoginDiv">
+								<form> Username: <input type = 'text'> Password: <input type = 'text'>
+								 </form> 
+								 <div id = "loginbutton">
+								 <form action="payment.html">
+   									 <input type="submit" value="Login as Employee">
+								</form>
+								<form action="payment.html">
+   									 <input type="submit" value="Login as Business Customer">
+								</form>
+							</div>
+
+
 						</div>
-					</td>
-				</tr>
-			</table>
-			
+
 		</div>
 	</div>
 	<div id="footer">

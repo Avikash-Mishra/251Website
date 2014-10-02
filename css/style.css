@@ -94,9 +94,12 @@ img {
 	padding: 20px 0px;
 }
 #header > div {
-	width: 920px;
+	width: 960px;
 	margin: 0 auto;
 	padding: 0;
+}
+#loginbutton{
+	margin-left: 50px;
 }
 /** Logo **/
 #logo {
@@ -111,7 +114,7 @@ img {
 	display: inline-block;
 	list-style: none;
 	line-height: 50px;
-	margin: 0;
+	margin-left: 0;
 	padding: 0;
 }
 #navigation ul {
@@ -176,7 +179,10 @@ img {
 	margin: 0 auto auto 500px;
 	padding: 54px 40px;
 }
-
+#introdiv{
+	
+	
+}
 #bikeimage{
 	width: 175px;
 	height: 120px;
@@ -197,7 +203,12 @@ img {
 	width: 500px;
 	height: 300px;
 }
-
+#GreenBActionDiv{
+	margin-left: auto;
+	margin-right: auto;
+	height: 315px;
+	width: 560px;
+}
 h1 {
 	color: #3e3e3e;
 	font-size: 30px;
