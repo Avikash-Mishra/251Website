@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<!-- website template -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Home page</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="header">
+		<div>
+			<a href="index.html"><img id="logo" src="images/logo.png" alt="Img"></a>
+			<ul id="navigation">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="Browse.html">Browse</a>
+				</li>
+				<li>
+					<a href="cart.html">Shopping Cart</a>
+				</li>
+				<li>
+					<a href="trackorder.html">Track order</a>
+				</li>
+				<li>
+					<a href="support.html">Support</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+						<div>
+							<h1>Product Review</h1>
+							
+							<h2>The Falcon</h2>
+							<div id = "divreviewimg">
+							<img id="bikereviewimage" src="images/bike1.jpg" alt="Bike">
+							</div>
+							<div id = "greenline">
+							</div>
+							<br>
+							<div id = "review">
+								<h3>Summary</h3>
+								<div class="starRate">
+<div>Currently rated: 3 stars<b></b></div>
+<ul>
+<li><a href="#"><span>Give it 5 stars</span></a></li>
+<li><a href="#"><span>Give it 4 stars</span></a></li>
+<li><a href="#"><span>Give it 3 stars</span><b></b></a></li>
+<li><a href="#"><span>Give it 2 stars</span></a></li>
+<li><a href="#"><span>Give it 1 star</span></a></li>
+</ul>
+</div>
+								<ul>
+									<li>Stiff, aggressive and light weight cross-style electric bike with torque sensing rear hub motor</li><li>Removable LCD computer interface is intuitive to use and doesn’t get in the way when riding</li>
+									<li>Battery design requires removal for charging but looks great on bike and balances out weight front to rear</li>
+								</ul>
+
+
+							</div>
+							<h2>Feedback</h2>
+								<div id = "feedback">
+								</div>
+								
+								Your name:<br><input id = "nameinput" type="text" name="realname"><br><br>
+								Your feedback:<br>
+								<textarea id = "feedbacktext" name="comments" rows="5" cols="100">
+								</textarea><br>
+								<input type="submit" value="Submit" onclick = "submitFeedback()"> 
+						
+						</div>
+					
+			
+			
+		
+	</div>
+	<div id="footer">
+		<div class="block">
+			<p>
+				Footer
+			</p>
+		</div>
+	</div>
+</body>
+</html>
+
+<script>
+function submitFeedback(){	
+	if(document.getElementById("feedbacktext").value.length < 10){
+		alert("Feedback must be more then 10 chracters long");
+		return;
+	}
+	if(document.getElementById("nameinput").value == ''){
+		alert("Name Cannot be empty");
+		return;
+	}
+	var name = document.getElementById("nameinput").value;
+	var feedbackvar = document.getElementById("feedbacktext").value;
+	var x = document.getElementById("feedback");
+	x.innerHTML = x.innerHTML + "<p> Name: "+name+"<br>"+feedbackvar+"</p>";
+}
+</script>
