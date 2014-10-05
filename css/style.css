@@ -18,9 +18,13 @@ body {
 	background-color: #fff;
 	font-family: 'OpenSans';
 	margin: 0;
+	height: 100%;
 }
 img {
 	border: 0;
+}
+#displayEdit{
+	visibility: hidden;
 }
 .block:after, #contents:after {
 	clear:both;
@@ -59,6 +63,7 @@ img {
 .fancybutton:hover {
 	background-position: 0 0;
 }
+
 .simpletable {
 	border-collapse: collapse;
 	background-color: WhiteSmoke;
@@ -67,12 +72,12 @@ img {
 	margin-left: 200px;
 }
 .simpletable th {
-	background-color: #A7C942;
+	background-color: #2C6700;
 	color: White;
 }
 .simpletable, .simpletable td, .simpletable th {
 	padding: 10px 15px 10px 15px;
-	border: 1px solid #A7C942;
+	border: 1px solid #2C6700;
 }
 
 .simpletable2 {
@@ -81,27 +86,27 @@ img {
 	width: 80%;
 }
 .simpletable2 th {
-	background-color: #A7C942;
+	background-color: #2C6700;
 	color: White;
 }
 .simpletable2, .simpletable2 td, .simpletable2 th {
-	border: 1px solid #A7C942;
+	border: 1px solid #2C6700;
 }
 /*------------------------------ HEADER ------------------------------*/
 #header {
-	background-color: #99CC00;
+	background-color: #2C6700;
 	border-bottom: 1px solid #e6e6e6;
 	padding: 20px 0px;
 }
 #header > div {
-	width: 960px;
+	width: 980px;
 	margin: 0 auto;
 	padding: 0;
 }
 #LoginDivButton{
 	margin-left: auto;
 	margin-right: auto;
-	width: 275px;
+	width: 290px;
 }
 #LoginDiv{
 		margin-left: auto;
@@ -133,7 +138,7 @@ img {
 }
 #navigation li {
 	float: left;
-	width: 160px;
+	width: 150px;
 	text-align: center;
 }
 
@@ -186,6 +191,10 @@ img {
 	width: 880px;
 	margin: 0 auto auto 500px;
 	padding: 54px 40px;
+	background-color: white;
+}
+body{
+	background-color: lightgrey;
 }
 #introdiv{
 	
@@ -198,7 +207,7 @@ img {
 #greenline{
 	width: auto;
 	height: 5px;
-	background-color: #99CC00;
+	background-color: #2C6700;
 }
 #divreviewimg{
 	width: 500px;
@@ -378,9 +387,9 @@ p a {
 }
 /*------------------------------ FOOTER ------------------------------*/
 #footer {
-	background-color: #eee;
+	background-color: #2C6700;
 	border-top: 1px solid #d8d8d8;
-	padding: 0px 20px;
+	padding: 0px;
 }
 #footer > div {
 	width: 920px;
@@ -389,6 +398,7 @@ p a {
 #footer p {
 	font-size: 12px;
 	line-height: 30px;
+	color: white;
 }
 
 .visuallyhidden {
@@ -400,8 +410,9 @@ p a {
     list-style-image: none;
     margin: 0;
     padding: 0;
-    margin-top: 20px;
+    
     white-space: nowrap;
+    background-color: white;
 
 }
 
@@ -479,7 +490,7 @@ p a {
     margin-right: 20px;
     text-align: center;
    	border-color: #99CC00;
-   	background-color: #86b300;
+   	background-color: #2C6700;
 
 }
 
@@ -553,7 +564,7 @@ input[type="number"] {
     margin-right: 20px;
     text-align: center;
    	border-color: #99CC00;
-   	background-color: #86b300;
+   	background-color: #2C6700;
 
 }
 
@@ -562,14 +573,18 @@ input[type="number"] {
   margin-top: 5%;
 }
 
-/* 'star-rating' component */
-.starRate {position:relative; margin:20px; overflow:hidden; zoom:1;}
-.starRate ul {width:160px; margin:0; padding:0;}
-.starRate li {display:inline; list-style:none;}
-.starRate a, .starRate b {background:url(../images/star_rate.gif) left top repeat-x;}
-.starRate a {float:right; margin:0 80px 0 -144px; width:80px; height:16px; background-position:left 16px; color:#000; text-decoration:none;}
-.starRate a:hover {background-position:left -32px;}
-.starRate b {position:absolute; z-index:-1; width:80px; height:16px; background-position:left -16px;}
-.starRate div b {left:0px; bottom:0px; background-position:left top;}
-.starRate a span {position:absolute; left:-300px;}
-.starRate a:hover span {left:90px; width:100%;}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  float: left;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}

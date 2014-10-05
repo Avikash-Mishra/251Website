@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
-<!-- Website template by freewebsitetemplates.com -->
+<!-- Website template -->
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Menu page</title>
+	<title>Simple page</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
@@ -20,10 +20,10 @@
 				<li>
 					<a href="cart.html">Shopping Cart</a>
 				</li>
-				<li class="active">
+				<li>
 					<a href="trackorder.html">Track order</a>
 				</li>
-				<li>
+				<li class="active">
 					<a href="support.html">Support</a>
 				</li>
 				<li>
@@ -32,36 +32,37 @@
 			</ul>
 		</div>
 	</div>
-
 	<div id="contents">
+			<div class = "filtersupport">
+				<h2 id="browse">Admin</h2>
+			<ul id = "navigationb">
+				<li class = "active">
+				<p>
+					<a href="orderstock.html">Order Stock</a>
 
-		<h2> Track Order </h2>
+				</p>
+			</li>
+			<li>
+				<p>
+					<a href="editprice.html">Edit Prices</a>
+				</p>
+			</li>
 
-		<textarea id = "ordertext" name="ordertext" rows="5" cols="100">Enter tracking number(s)</textarea><br>
-		<input type="submit" value="Track" onclick = "submitFeedback()">
-		<br>
-		<br>
-		<h2>Tracking results:</h2>
-		<br>
-		<table class="simpletable2">
-				<tr>
-					<th>Tracking number</th>
-					<th>Last scanned location</th>
-					<th>ETA</th>
-				</tr>
-				<tr>
-					<td>00123456789</td>
-					<td>Auckland, New Zealand</td>
-					<td>2 Days</td>
+			<li>
+				<p>
+					<a href="onlinesupport.html">Online Chat</a>
+				</p>
+			</li>
+			
+			</ul>
+			
+		</div>
+		<div class = "list">
+			<h1>Order has been placed</h1>
+		
+			</div>
 
-				</tr>
-				<tr>
-					<td>0098765431</td>
-					<td>Nelson, New Zealand</td>
-					<td>1 Week</td>
-				</tr>
-			</table>
-
+		</div>
 	</div>
 	<div id="footer">
 		<div class="block">
@@ -72,5 +73,3 @@
 	</div>
 </body>
 </html>
-
-	

@@ -34,39 +34,58 @@
 	</div>
 	<div id="contents">
 			<div class = "filtersupport">
-				<h2 id="browse">Support</h2>
+				<h2 id="browse">Business</h2>
 			<ul id = "navigationb">
-				<li>
+				<li >
 				<p>
-					<a href="support.html">FAQ</a>
+					<a href="orderstockb2b.html">Bulk Ordering</a>
 
 				</p>
 			</li>
-			<li class = "active">
+			<li  class="active">
 				<p>
-					<a href="onlinesupport.html">Online Support</a>
+					<a href="managedetails.html">Manage Details</a>
 				</p>
 			</li>
+
 			
 			</ul>
 			
 		</div>
 		<div class = "list">
-			<h1>Online Support Chat</h1>
-			
-				<h2>Live Chat</h2>
-					<textarea id = "feedbacktext" name="comments" rows="20" cols="70" readonly>GreensB Employee: Hi, What can I help you with today? 
+			<h2>Manage Delivery Details</h2>
+<table class="simpletable2">
+				<tr>
+					<th>Order Number</th>
+					<th>Enter Location</th>
+					<th>Enter Date</th>
+				</tr>
+				<tr>
+					<td>00123456789</td>
+					<td><input type = "text" value = "e.g Wellington"></td>
+					<td><input type = "text"  value = "dd/mm/yy"></td>
 
-Customer: Hi, I need information about GreenB
-
-
-								</textarea><br>
-								<textarea id = "feedbacktext" name="comments" rows="5" cols="70">Enter message here...
-								</textarea><br>
-								<input type="submit" value="Submit">
-
-
+				</tr>
+				<tr>
+					<td>0098765431</td>
+					<td><input type = "text" value = "e.g Wellington"></td>
+					<td><input type = "text" value = "dd/mm/yy"></td>
+				</tr>
+			</table>
+			<br>
+			<button onclick="displayDiv()">Update Details</button>
+			<br>
+			<div id = "displayEdit">
+				<p>
+					Details Updated.
+				</p>
 			</div>
+
+	</div>
+			</div>
+
+
+		</div>
 
 		</div>
 	</div>
@@ -79,3 +98,10 @@ Customer: Hi, I need information about GreenB
 	</div>
 </body>
 </html>
+<script>
+	function displayDiv(){
+		var e = document.getElementById("displayEdit");
+		e.style.visibility = "visible";
+	}
+
+</script>
